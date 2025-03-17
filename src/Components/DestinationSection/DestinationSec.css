@@ -1,0 +1,69 @@
+main {
+    width: 100%;
+    height: 100vh;
+}
+main .background {
+    position: relative;
+}
+main .background .content {
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+main .background .content .details {
+    text-align: center;
+    color: white;
+}
+main .background .content .details h1 {
+    font-size: 120px;
+    letter-spacing: 7px;
+    margin: 10px 0px;
+}
+main .background .content .details h2 {
+    font-weight: 300;
+}
+main .background .content .details p {
+    color: white;
+}
+main .background .content .contentInformation {
+    width: 100%;
+    height: 85px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin-top: 50px;
+    border: 1px solid #ff7815;
+    padding: 10px 0px;
+}
+main .background .content .contentInformation div {
+    width: 20%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+}
+main .background .content .contentInformation .search {
+    width: 23%;
+    border-radius: 100px;
+    border: none;
+    background-color: #ff7815;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+main .background .content .contentInformation .search:hover {
+    background-color: rgb(255, 120, 21, 80%);
+}
+main .background .content .contentInformation .search span {
+    color: #ff7815;
+    background-color: white;
+    text-align: center;
+    padding: 2px 3px 0px 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 23px;
+    margin-top: 2px;
+}
