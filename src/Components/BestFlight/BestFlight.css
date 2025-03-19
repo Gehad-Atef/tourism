@@ -1,6 +1,6 @@
 .FlightSec {
     width: 100%;
-    height: 120vh;
+    height: auto;
     padding: 0px 100px;
 }
 .FlightSec .content {
@@ -14,7 +14,7 @@
 }
 .FlightSec .content .titles h2 {
     color: #1d1c1b;
-    font-size: 30px;
+    font-size: 2rem;
 }
 .FlightSec .content button {
     width: 200px;
@@ -29,21 +29,17 @@
     background-color: rgb(28, 28, 28, 70%);
 }
 .flightCards {
-    width: 100%;
-    height: 500px;
+    width: auto;
+    height: auto;
     margin-top: 40px;
-    display: flex;
-    justify-content: space-around;
-
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
 }
 .flightCard {
-    width: 28%;
     height: auto;
     background-color: white;
     border-radius: 20px;
-    gap: 5%;
 }
 .flightCard .cardDetails {
     padding: 5px;
@@ -68,7 +64,7 @@
 .flightCard button {
     width: 90%;
     height: 50px;
-    margin: 10px;
+    margin: 5%;
     border: none;
     background-color: #ff7815;
     color: white;
@@ -80,4 +76,18 @@
     border: 1px solid #ff7815;
     background-color: white;
     color: #ff7815;
+}
+@media (max-width: 1000px) {
+    .flightCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flightCard button {
+        width: 80%;
+        height: 40px;
+    }
+}
+@media (max-width: 650px) {
+    .flightCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

@@ -1,6 +1,6 @@
 .toursSec {
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 .toursSec .content {
     width: 100%;
@@ -28,4 +28,30 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
+}
+/* .toursSec .content .toursContainer .singleTour {
+    position: relative;
+} */
+/* .toursSec .content .toursContainer .singleTour::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 2s;
+}
+.toursSec .content .toursContainer .singleTour:hover::after {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+} */
+@media (max-width: 900px) {
+    .toursSec .content .toursContainer {
+        width: 100%;
+        height: 400px;
+        gap: 10px;
+    }
 }

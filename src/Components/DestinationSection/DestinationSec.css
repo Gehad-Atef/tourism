@@ -1,24 +1,64 @@
 main {
+    min-width: 100%;
+    height: auto;
+    position: relative;
+}
+main .nav {
+    width: auto;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    right: 55px;
+    z-index: 30;
+}
+
+main .nav table {
     width: 100%;
-    height: 100vh;
+    font-size: 1em;
+}
+main .nav table,
+tr,
+td {
+    border-collapse: collapse;
+    border: 1px solid rgb(146, 145, 145);
+}
+main .nav table tr {
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+td {
+    padding: 5px;
+}
+tr:hover {
+    background-color: #ff7815;
+}
+main .nav table {
+    font-size: 17px;
+}
+main .nav table tr td a {
+    text-decoration: none;
+    color: rgb(116, 115, 115);
 }
 main .background {
     position: relative;
 }
 main .background .content {
     width: 80%;
-    height: 70%;
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -40%);
 }
 main .background .content .details {
+    min-width: auto;
     text-align: center;
     color: white;
 }
 main .background .content .details h1 {
-    font-size: 120px;
+    font-size: 7rem;
     letter-spacing: 7px;
     margin: 10px 0px;
 }
@@ -27,26 +67,25 @@ main .background .content .details h2 {
 }
 main .background .content .details p {
     color: white;
+    padding: 0px 100px;
 }
 main .background .content .contentInformation {
-    width: 100%;
-    height: 85px;
+    width: auto;
+    height: auto;
     border-radius: 200px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     background-color: white;
     margin-top: 50px;
     border: 1px solid #ff7815;
-    padding: 10px 0px;
+    padding: 10px;
 }
 main .background .content .contentInformation div {
-    width: 20%;
-    height: 100%;
     /* background-color: antiquewhite; */
 }
 main .background .content .contentInformation .search {
-    width: 23%;
-    border-radius: 100px;
+    border-radius: 2em;
     border: none;
     background-color: #ff7815;
     color: white;
@@ -64,6 +103,30 @@ main .background .content .contentInformation .search span {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    font-size: 23px;
+    font-size: 20px;
     margin-top: 2px;
+}
+@media (max-width: 900px) {
+    main .background .content .details h1 {
+        font-size: 5rem;
+    }
+
+    main .background .content .contentInformation {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main .background .content .contentInformation .search {
+        width: 70%;
+        margin: 0px auto;
+    }
+}
+@media (max-width: 735px) {
+    main .background .content .contentInformation {
+        border-radius: 50px;
+    }
+    main .background .content .details p {
+        font-size: 12px;
+    }
+    main .background .content .details h1 {
+        font-size: 3rem;
+    }
 }

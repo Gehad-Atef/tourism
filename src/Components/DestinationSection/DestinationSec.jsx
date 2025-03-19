@@ -24,9 +24,58 @@ const array = [
         paragraph: "Enter Your Budget",
     },
 ];
-function DestinationSec() {
+function DestinationSec({ isOpen, setIsOpen, handleOpen }) {
     return (
         <main>
+            {isOpen && (
+                <div className="nav">
+                    <table>
+                        <tr>
+                            <td>
+                                {" "}
+                                <a href="#">Home</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                {" "}
+                                <a href="#">Packages</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                {" "}
+                                <a href="#">Tours</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                {" "}
+                                <a href="#">About</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                {" "}
+                                <a href="#">Blogs</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                {" "}
+                                <a href="#">Transportation</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                {" "}
+                                <a href="#">Contact</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            )}
+
             <div
                 className="background"
                 style={{
@@ -44,7 +93,7 @@ function DestinationSec() {
                         <h1>Destinations</h1>
                         <p>
                             Embark on a journey through time and experience the
-                            breathtaking beauty of Egypt, from the <br /> Great
+                            breathtaking beauty of Egypt, from the Great
                             Pyramids of Giza to the stunning beaches of the Red
                             Sea.
                         </p>

@@ -1,11 +1,11 @@
 .chooseSec {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: white;
 }
 .chooseSec .content {
     width: 80%;
-    height: 90%;
+    height: auto;
     margin: 5% auto;
 }
 .chooseSec .content h2 {
@@ -15,7 +15,7 @@
     text-align: center;
 }
 .chooseSec .content .chooseDevs {
-    width: 100%;
+    width: auto;
     height: 480px;
     display: grid;
     grid-template-columns: 26% 45% 26%;
@@ -39,9 +39,14 @@
     background-color: transparent;
 }
 .chooseSec .content .chooseDevs .devOne .orangeCircle .content h3 {
-    font-size: 22px;
+    font-size: 20px;
     color: #1d1c1b;
 }
 .chooseSec .content .chooseDevs .devOne .orangeCircle .content p {
     color: #1d1c1b;
+}
+@media (max-width: 970px) {
+    .chooseSec .content .chooseDevs .devOne .orangeCircle .content h3 {
+        font-size: 1rem;
+    }
 }

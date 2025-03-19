@@ -12,7 +12,7 @@ function ServicesDetails({ item }) {
             <div
                 className="divForIcon"
                 style={{
-                    width: "25%",
+                    width: "auto",
                     fontSize: "20px",
                     display: "flex",
                     alignItems: "center",

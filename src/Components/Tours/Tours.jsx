@@ -51,7 +51,11 @@ function Tours() {
                 <h2 className="toursTitle">All Tours</h2>
                 <div className="toursContainer">
                     {arrayTours.map((item, index) => (
-                        <SingleTour key={index} item={item} />
+                        <SingleTour
+                            key={index}
+                            item={item}
+                            className="singleTour"
+                        />
                     ))}
                 </div>
             </div>
